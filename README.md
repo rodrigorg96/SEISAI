@@ -1,6 +1,6 @@
 # SEISAI
 
-![LOGO](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![LOGO](https://seisai.000webhostapp.com/SEISAI_LOGO.png)
 
 Sistema Embebido Inteligente para Sanitarios Intel
 
