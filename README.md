@@ -1,4 +1,7 @@
 # SEISAI
+
+![LOGO](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 Sistema Embebido Inteligente para Sanitarios Intel
 
 Este sistema está dividido en las siguientes partes:
