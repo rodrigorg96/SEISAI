@@ -1,0 +1,25 @@
+##Precondiciones
+Tener instalado miniconda
+Tener instalado mysql 8.x
+
+##Entorno y dependencias:
+conda create -n InoLabs python=3.6
+
+	activate InoLabs
+
+	pip install paho-mqtt
+
+	pip install hbmqtt
+
+	pip install pymysql
+
+##Crear base de datos:
+mysql -u [user] -p
+[password]
+
+source /[ubicación_del_archivo]/base_de_datos/crear_bd.sql
+source /[ubicación_del_archivo]/base_de_datos/insertar_datos_necesarios.sql
+
+
+##Ejecutar cliente para introducir envíos
+python cliente.py
