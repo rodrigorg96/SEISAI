@@ -1,0 +1,47 @@
+<div class="row animated fadeIn">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body table-wrapper-scroll-y">
+        <h3 class="card-title">Sanitarios para ZPN1</h3>
+        <table class="table table-hover table-responsive-lg ">
+          <thead>
+            <meta http-equiv="refresh" content="180"/>
+            <tr>
+              <th>Baño</th>
+              <th>Género</th>
+              <th>Capacidad</th>
+              <th>Entradas</th>
+              <th>Servicio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let sanitario of sanitarios; let registro = index;">
+              <td>ZPN{{sanitario.id_area}}{{sanitario.descripcion}}</td>
+              <div *ngIf="sanitario.genero == 1"><td>Hombres</td></div>
+              <div *ngIf="sanitario.genero == 0"><td>Mujeres</td></div>
+              <td>{{sanitario.capacidad}}</td>
+              <td>{{registros[registro]?.cantidad}}</td>
+              <td>
+
+
+                <div *ngIf="sanitario.capacidad - registros[registro]?.cantidad < 0">
+                  <button  (click)="servicioRealizado(sanitario.id_wc)" class="btn btn-danger">
+                    <i class="fa fa-exclamation-circle" style="font-size:20px"> Necesario</i>
+                  </button>
+                </div>
+
+                <div *ngIf="sanitario.capacidad - registros[registro]?.cantidad > 0">
+                  <button  (click)="servicioRealizado(sanitario.id_wc)" class="btn btn-success">
+                    <i class="fa fa-check"> Realizado</i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer text-center">© {{year}} Intel</footer>
