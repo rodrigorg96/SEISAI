@@ -31,7 +31,7 @@
                 </div>
 
                 <div *ngIf="sanitario.capacidad - registros[registro]?.cantidad > 0">
-                  <button  (click)="servicioRealizado(sanitario.id_wc)" class="btn btn-success">
+                  <button  (click)="servicioRealizado(sanitario.id_wc)" class="btn btn-success" style="font-size:20px">
                     <i class="fa fa-check"> Realizado</i>
                   </button>
                 </div>
@@ -43,4 +43,4 @@
     </div>
   </div>
 </div>
-<footer class="footer text-center">© {{year}} Intel</footer>
+<footer class="footer text-center">{{year}} Sistema Embebido Inteligente para Sanitarios Intel</footer>
