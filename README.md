@@ -1,4 +1,4 @@
-![LOGO](http://seisai774.atwebpages.com/SEISAI_LOGO.png)
+![LOGO](https://rodrigo-rubio.000webhostapp.com/images/SEISAI_LOGO.png)
 
 Sistema Embebido Inteligente para Sanitarios Intel
 
